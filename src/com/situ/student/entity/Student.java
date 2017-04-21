@@ -9,6 +9,13 @@ public class Student {
 	public Student() {
 		super();
 	}
+	
+	public Student(String name, int age, String gender) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.gender = gender;
+	}
 
 	public Student(int id, String name, int age, String gender) {
 		super();
