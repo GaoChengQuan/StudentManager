@@ -41,4 +41,11 @@ public interface IStudentDao {
 	 * @return
 	 */
 	public abstract List<Student> findAll();
+	
+	/**
+	 * 检查指定的名字在数据库中是否存在
+	 * @param name
+	 * @return true：存在 false：不存在
+	 */
+	public abstract boolean checkStudent(String name);
 }

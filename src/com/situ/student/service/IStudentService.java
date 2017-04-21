@@ -3,6 +3,7 @@ package com.situ.student.service;
 import java.util.List;
 
 import com.situ.student.entity.Student;
+import com.situ.student.exception.NameRepeatException;
 
 public interface IStudentService {
 
@@ -11,7 +12,7 @@ public interface IStudentService {
 	 * @param student
 	 * @return true:添加成功 false：添加失败
 	 */
-	public abstract boolean add(Student student);
+	public abstract boolean add(Student student) throws NameRepeatException;
 	
 	/**
 	 * 根据id删除学生
